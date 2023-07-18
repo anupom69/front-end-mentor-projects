@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* Primary colors */
+
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+
+    /* gradients */
+    --light-slate-blue-background: hsl(252, 100%, 67%);  
+    --light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persin-blue-circle: hsla(241, 72%, 46%, 0);
+
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender:hsl(241, 100%, 89%) ;
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 2rem;
+    padding-top: 0;
+    max-width: 240px;
+    height: calc(300px + 2rem);
+    border-radius: 1.5em;
+    text-align: center;
+}
+
+.container-first {
+    flex-shrink: 0;
+    color: var(--white);
+    background:linear-gradient(to bottom, var(--light-slate-blue-background), var(--light-royal-blue-background));
+    z-index: 1;
+}
+
+.circle {
+    background:linear-gradient(to bottom, var(--violet-blue-circle), var(--persin-blue-circle));
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+h3.score {
+    font-size: 2.4rem;
+    -webkit-text-stroke: 2px white;
+    letter-spacing: 2.5px;
+}
+
+p.score {
+    font-size: 12px;
+    color: var(--light-lavender);
+}
+
+.title-top {
+    font-size: 1rem;
+    padding: 1rem;
+    padding-bottom: 1.2rem;
+    text-align: left;
+}
+.container-first .title-top {
+    color: hsl(221, 100%, 86%);
+    text-align: center;
+}
+
+h1.comment {
+    margin: .8rem;
+}
+
+p.comment {
+    font-size: 12px;
+    color: var(--light-lavender);
+}
+
+
+.container-second {
+    color: var(--dark-gray-blue);
+    position: relative;
+    right: 30px;
+    min-width: 260px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 1rem;
+    padding-left: 30px;
+    text-align: center;
+    box-shadow: 0 5px 20px hsl(224, 30%, 90%);
+}
+.marks {
+    display: flex;
+    padding: 8px 15px;
+    margin-left: 1rem;
+    margin-bottom: 10px;
+    border-radius: .8em;
+    font-size: 16px;
+}
+
+.ico-p {
+    display: flex;
+    gap: 5px;
+}
+.marks-reaction {
+    background-color: hsl(0, 100%, 96%);
+}
+
+.marks-memory {
+    background-color: hsl(39, 100%, 96%);
+}
+
+.marks-verbal {
+    background-color: hsl(166, 100%, 96%);
+}
+
+.marks-visual {
+    background-color: hsl(234, 85%, 96%);
+}
+
+p.mark {
+    margin-left: auto;
+    -webkit-text-stroke: .3px var(--dark-gray-blue);
+    letter-spacing: 1px;
+}
+.reaction {
+    color: var(--light-red);
+}
+.memory {
+    color: var(--orangey-yellow);
+}
+.verbal {
+    color: var(--green-teal);
+}
+.visual {
+    color: var(--cobalt-blue);
+}
+
+span.out-of {
+    -webkit-text-stroke: 0;
+    letter-spacing: 0;
+    color:hsl(221, 100%, 83%);
+}
+
+.btn {
+    margin-top: 1.3rem;
+    border-radius: 555em;
+    border: none;
+    display: inline;
+    color: var(--white);
+    background-color: var(--dark-gray-blue);
+    width: calc(168px + 30px);
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+    background: linear-gradient(to top, var(--light-royal-blue-background), var(--light-slate-blue-background));
+}
