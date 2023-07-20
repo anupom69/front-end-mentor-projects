@@ -219,14 +219,18 @@ span.out-of {
     }
 
     .btn {
-        width: 100%;
+        width: 80%;
+        position: fixed;
+        bottom: 1em;
+        left: 0;
+        transform: translate(12.5%);
     }
     .container.container-second {
         position: fixed;
         padding: 1rem;
         border-radius: 0;
         bottom: 0;
-        margin-left: 0;
+        left: 0;
         width: 100vw;
         height: 60vh;
     }
